@@ -1,0 +1,44 @@
+<nav>
+  <div class="container nav__container">
+    <a href="#" class="nav__logo">
+      <h1>B.Atum</h1>
+    </a>
+
+    <ul>
+      <li>
+        <a class="<%= path === '/' ? 'active': '' %>" href="/">SHOP</a>
+      </li>
+      <li>
+        <a class="<%= path === '/products' ? 'active': '' %>" href="/products">PRODUCTS</a>
+      </li>
+      <li>
+        <a class="<%= path === '/cart' ? 'active': '' %>" href="/cart">CART</a>
+      </li>
+      <li>
+        <a class="<%= path === '/orders' ? 'active': '' %>" href="/orders">ORDERS</a>
+      </li>
+      <li>
+        <a class="<%= path === '/admin/add-product' ? 'active': '' %>" href="/admin/add-product">ADD PRODUCT</a>
+      </li>
+      <li>
+        <a class="<%= path === '/admin/products' ? 'active': '' %>" href="/admin/products">ADMIN PRODUCT</a>
+      </li>
+    </ul>
+
+    <div class="nav__icons">
+      <a href="#"><span class="material-symbols-sharp"> search </span> </a>
+      <a href="#"
+        ><span class="material-symbols-sharp"> favorite </span>
+      </a>
+      <a href="/cart"
+        ><span class="material-symbols-sharp"> shopping_bag </span>
+      </a>
+      <button id="menu-btn">
+        <span class="material-symbols-sharp"> menu </span>
+      </button>
+    </div>
+    <button id="close-btn">
+      <span class="material-symbols-sharp"> close </span>
+    </button>
+  </div>
+</nav>
